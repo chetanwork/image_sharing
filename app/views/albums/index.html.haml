@@ -1,0 +1,15 @@
+%h2 Listing All Albums
+%br/
+.table-responsive
+  %table.table.table-bordered.table-hover
+    %thead
+      %th Album Name
+      %th Album Owner
+      %th Created at
+      %th Show Images
+    %tbody
+      - @albums.each do |album|
+        %td= album.name
+        %td= album.user.name
+        %td= album.user.created_at.strftime("%d-%m-%y")
+        %td= link_to 'Show', album

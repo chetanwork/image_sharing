@@ -1,0 +1,12 @@
+%html
+  %head
+    %title Images
+    = stylesheet_link_tag "display" , :media => "all"
+    = stylesheet_link_tag "application" , :media => "all"
+    = csrf_meta_tags
+    = javascript_include_tag "application"
+  %body
+    %header
+      = render 'layouts/navigation'
+    %main{:role => "main"}
+    = yield
