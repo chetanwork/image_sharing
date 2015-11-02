@@ -5,13 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - ruby '2.2.2'
 
-* System dependencies
+* System dependencies - 
 
 * Configuration
 
-* Database creation
+* Database creation - Need 'mysql2', '~> 0.3.13'
 
 * Database initialization
 
